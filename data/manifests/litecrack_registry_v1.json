@@ -1,0 +1,74 @@
+{
+  "status": "FROZEN_REGION_ONLY_CONTROL",
+  "training_archive": "phase3_results.zip",
+  "training_archive_sha256": "d1d9c4fa7c42efb64e2f30f775fbbf8f5973f22676f591ba1537523d63119470",
+  "evaluation_archive": "phase3_final_evaluation.zip",
+  "evaluation_archive_sha256": "5906263ae6885ebd412e3862297c31d1306af71aa4c794eb615885d7d6aa57e9",
+  "evaluation": {
+    "architecture": "litecrack",
+    "best_epoch": 99,
+    "checkpoint_sha256": "9ac52e68c86938f826ddf9bf5176ce8abba830c4ecb3cdd01dd35823777c1fa2",
+    "manifest_sha256": "9c97554166af5494c746d46885425f748ea46c4035863c22c90215b3506358ae",
+    "preview_ids": {
+      "source_holdout": [
+        "DeepCrack:source_test:11301-4",
+        "DeepCrack:source_test:11217",
+        "DeepCrack:source_test:11142-2",
+        "DeepCrack:source_test:IMG_6469-7",
+        "DeepCrack:source_test:11247-2",
+        "DeepCrack:source_test:11240-5"
+      ],
+      "target_query": [
+        "CrackMap:target:GOPR0322 (1)",
+        "CrackMap:target:GOPR0132 (2)",
+        "CrackMap:target:GOPR0107 (3)",
+        "CrackMap:target:GOPR0326 (3)",
+        "CrackMap:target:GOPR0251 (1)",
+        "CrackMap:target:GOPR0203 (1)"
+      ]
+    },
+    "preview_selection": "seed 42, six samples per split; not cherry-picked",
+    "results": {
+      "source_holdout": {
+        "dice": 0.7636097642565578,
+        "iou": 0.6370104540626711,
+        "loss": 0.3660304286057436,
+        "n": 237,
+        "precision": 0.8446032636905019,
+        "predicted_foreground_fraction": 0.03554853613052187,
+        "recall": 0.730624828676257,
+        "truth_foreground_fraction": 0.04327650113573557
+      },
+      "target_query": {
+        "dice": 0.3401163463113143,
+        "iou": 0.2264689161528,
+        "loss": 0.7106475108548215,
+        "n": 95,
+        "precision": 0.8470819532871247,
+        "predicted_foreground_fraction": 0.010342889107567699,
+        "recall": 0.2452833912580421,
+        "truth_foreground_fraction": 0.039516730332060865
+      }
+    },
+    "scope": "Fixed region-only model; no training, adaptation or threshold tuning; exploratory target query previously used",
+    "threshold": 0.5,
+    "validation_replay": {
+      "dice": 0.7372418018368383,
+      "iou": 0.6223634694780533,
+      "loss": 0.40793500741322836,
+      "n": 60,
+      "precision": 0.7131622011773289,
+      "predicted_foreground_fraction": 0.02988154093424479,
+      "recall": 0.7819713837156693,
+      "truth_foreground_fraction": 0.028463999430338543
+    }
+  },
+  "parameters": 339265,
+  "boundary_supervision": false,
+  "adapted": false,
+  "limitations": [
+    "Single seed; no confidence interval established.",
+    "Target query was previously inspected; exploratory pilot only.",
+    "Same-source accuracy remains below full baselines."
+  ]
+}

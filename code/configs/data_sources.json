@@ -1,0 +1,10 @@
+{
+  "DeepCrack": {
+    "url": "https://github.com/yhlleo/DeepCrack.git",
+    "commit": "8202a60701068645c883ed68b95fd3f30914d90c"
+  },
+  "CrackMap": {
+    "url": "https://github.com/ikatsamenis/CrackMap.git",
+    "commit": "bd8fbd7789993cf278e6118836071f2ed32acffd"
+  }
+}

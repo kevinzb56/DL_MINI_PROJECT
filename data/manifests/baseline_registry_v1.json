@@ -1,0 +1,91 @@
+{
+  "status": "FROZEN_PILOT_BASELINES",
+  "manifest_sha256": "9c97554166af5494c746d46885425f748ea46c4035863c22c90215b3506358ae",
+  "training_archive": "phase2_stabilization_results.zip",
+  "training_archive_sha256": "578ea01fb8389abd0904f63ed621192bc6708b6d76cac8ca9c2840e01d1a5040",
+  "evaluation_archive": "phase2_final_evaluation.zip",
+  "evaluation_archive_sha256": "e14e1e4f611cdb953a7d4132f37fd742c3c4c5bf6e5bc8b896f6c04dced5b65c",
+  "models": {
+    "r2au": {
+      "checkpoint_sha256": "3ec81bbdecaddf1437b940771d5357486d3c95b20dcad8c6f042d16516b6361c",
+      "checkpoint_archive_member": "artifacts/phase2/r2au/checkpoints/step-000001890-0ce3f2c8.pt",
+      "best_epoch": 63,
+      "threshold": 0.5,
+      "validation": {
+        "dice": 0.8369854390621185,
+        "iou": 0.7312587315837542,
+        "loss": 0.17451872328917187,
+        "n": 60,
+        "precision": 0.82981349726518,
+        "predicted_foreground_fraction": 0.02925872802734375,
+        "recall": 0.8655556291341782,
+        "truth_foreground_fraction": 0.028463999430338543
+      },
+      "evaluation": {
+        "source_holdout": {
+          "dice": 0.8142092791916449,
+          "iou": 0.7027095433025924,
+          "loss": 0.19573180805027232,
+          "n": 237,
+          "precision": 0.8775524508349503,
+          "predicted_foreground_fraction": 0.03723286177161374,
+          "recall": 0.7886769226143129,
+          "truth_foreground_fraction": 0.04327650113573557
+        },
+        "target_query": {
+          "dice": 0.3452161667427342,
+          "iou": 0.22918478899733408,
+          "loss": 0.6548966483065957,
+          "n": 95,
+          "precision": 0.8628817473587237,
+          "predicted_foreground_fraction": 0.008846403442715344,
+          "recall": 0.23935816326472711,
+          "truth_foreground_fraction": 0.039516730332060865
+        }
+      }
+    },
+    "unet": {
+      "checkpoint_sha256": "ba711be7f8581815a1329202536cbb95f0e1374c989c5ec2cfbc83104f2469a8",
+      "checkpoint_archive_member": "artifacts/phase2/unet/checkpoints/step-000002610-0ae1a639.pt",
+      "best_epoch": 87,
+      "threshold": 0.5,
+      "validation": {
+        "dice": 0.8408725599447886,
+        "iou": 0.7373777742187182,
+        "loss": 0.34095870653788246,
+        "n": 60,
+        "precision": 0.8036070277293523,
+        "predicted_foreground_fraction": 0.030782063802083332,
+        "recall": 0.9057885736227036,
+        "truth_foreground_fraction": 0.028463999430338543
+      },
+      "evaluation": {
+        "source_holdout": {
+          "dice": 0.8132289150721916,
+          "iou": 0.7044373315912259,
+          "loss": 0.32370564907411986,
+          "n": 237,
+          "precision": 0.8654441602119414,
+          "predicted_foreground_fraction": 0.03772455529321598,
+          "recall": 0.806187402284095,
+          "truth_foreground_fraction": 0.04327650113573557
+        },
+        "target_query": {
+          "dice": 0.24603936722575637,
+          "iou": 0.15751775848483177,
+          "loss": 0.7937848335818241,
+          "n": 95,
+          "precision": 0.79493556383409,
+          "predicted_foreground_fraction": 0.005661974474787712,
+          "recall": 0.16223469594812118,
+          "truth_foreground_fraction": 0.039516730332060865
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Single seed; modified paper-inspired architectures; source grouping incomplete.",
+    "Target query is exploratory and was previously evaluated in v1.",
+    "No lightweight, boundary-aware, or few-shot improvement established yet."
+  ]
+}

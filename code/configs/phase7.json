@@ -1,0 +1,7 @@
+{
+  "protocol": "phase7_extensions_v1",
+  "ranking": {"policy": "mean_binary_entropy_original_size", "random_seed": 7301, "max_pool": 100},
+  "tiling": {"tile_size": 256, "overlap": 64, "blend": "hann_floor_0.05", "padding": "edge", "max_tiles": 256},
+  "replay": {"seed": 7301, "source_train_images": 16, "source_validation_images": 8, "source_per_support": 1, "allowed_source_validation_dice_drop": 0.02},
+  "onnx": {"opset": 17, "max_probability_error": 0.001, "max_metric_difference": 0.002, "threads": 2}
+}

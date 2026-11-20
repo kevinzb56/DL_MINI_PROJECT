@@ -1,0 +1,9 @@
+{
+  "protocol": "phase5_fixed_decoder_adaptation_v1",
+  "budgets": [1, 5, 10], "draws": [0, 1, 2, 3, 4],
+  "epochs": 5, "batch_size": 2, "learning_rate": 0.0001,
+  "gradient_clip_norm": 1.0, "device": "cuda",
+  "freeze_encoder": true, "augmentation": false,
+  "replay": false, "checkpoint_every_optimizer_step": true,
+  "selection": "final_fixed_step_checkpoint_no_query_selection"
+}

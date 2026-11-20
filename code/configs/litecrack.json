@@ -1,0 +1,10 @@
+{
+  "architecture": "litecrack", "encoder_width_mult": 0.5,
+  "normalization": "group", "initialization": "random_no_pretrained_weights",
+  "seed": 42, "image_size": 256, "batch_size": 8, "epochs": 100,
+  "learning_rate": 0.0001, "patience": 15, "checkpoint_every_steps": 30,
+  "device": "cuda", "loss": "bce_dice", "gradient_clip_norm": 1.0,
+  "deterministic": true, "evaluation_splits": ["source_validation"],
+  "max_parameters": 1055014,
+  "protocol": "phase3_region_only_validation_first"
+}

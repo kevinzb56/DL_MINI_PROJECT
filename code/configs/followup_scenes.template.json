@@ -1,0 +1,21 @@
+{
+  "protocol": "followup_external_scenes_v1",
+  "usage_terms": "REPLACE with the verified permission or dataset terms",
+  "physical_site_provenance": "REPLACE with collection log identifying roads/sites/captures and split assignment before tuning",
+  "records": [
+    {
+      "image_id": "REPLACE_unique_scene_id",
+      "site_id": "REPLACE_physical_site_id",
+      "group_id": "REPLACE_capture_or_sequence_id",
+      "split": "scene_train",
+      "image": "images/REPLACE.png",
+      "image_sha256": "REPLACE_sha256",
+      "mask": "cracks/REPLACE.png",
+      "mask_sha256": "REPLACE_sha256",
+      "road_mask": "roads/REPLACE.png",
+      "road_mask_sha256": "REPLACE_sha256",
+      "annotation_complete": true,
+      "annotation_origin": "human"
+    }
+  ]
+}

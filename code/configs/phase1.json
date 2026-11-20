@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "image_size": 256,
+  "source": "DeepCrack",
+  "target": "CrackMap",
+  "source_validation_fraction": 0.2,
+  "target_acquisition_fraction": 0.25,
+  "support_budgets": [1, 5, 10],
+  "support_draws": 5,
+  "checkpoint": {
+    "every_epochs": 1,
+    "every_optimizer_steps": 100,
+    "keep_best": true,
+    "immutable_snapshots": true,
+    "save_on_graceful_stop": true
+  },
+  "status": "provisional_until_data_audit"
+}

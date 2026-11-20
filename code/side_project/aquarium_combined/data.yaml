@@ -1,0 +1,19 @@
+names:
+- fish
+- jellyfish
+- penguin
+- puffin
+- shark
+- starfish
+- stingray
+nc: 7
+path: .
+roboflow:
+  license: CC BY 4.0
+  project: aquarium-qlnqy
+  url: https://universe.roboflow.com/roboflow-100/aquarium-qlnqy/dataset/1
+  version: 1
+  workspace: roboflow-100
+test: test/images
+train: train/images
+val: valid/images

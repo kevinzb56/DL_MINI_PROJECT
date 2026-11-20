@@ -1,0 +1,62 @@
+/* Readable labels at normal desktop zoom, with compact layouts on small screens. */
+.topbar strong, .nav-item { font-size: 12px; }
+.topbar .btn, .btn { font-size: 11px; }
+.hero-copy > p { font-size: 13px; max-width: 410px; }
+.hero-proof { font-size: 10px; }
+.eyebrow { font-size: 9px; letter-spacing: 1.5px; }
+.metric-strip small { font-size: 8px; }
+.metric-strip p { font-size: 10px; color: #8c9fa7; }
+.metric-strip strong { font-size: 32px; }
+.metric-strip strong span { font-size: 23px; }
+.chart-legend { font-size: 10px; }
+.chart-legend > small { font-size: 9px; }
+.chart-foot { font-size: 9px; color: #8b9da6; }
+.experiment-card > p, .score-row { font-size: 12px; }
+.budget-tabs button { font-size: 11px; }
+.small-note { font-size: 10px; color: #8a9da8; }
+.journey-step strong { font-size: 13px; }
+.journey-step small { font-size: 10px; color: #92a2ab; }
+.evidence-footer, .evidence-footer p, .evidence-footer button { font-size: 9px; color: #879ba6; }
+.sidebar-bottom p, .author strong, .research-pill { font-size: 10px; }
+.page-heading-row p { font-size: 13px; }
+.model-controls > label:first-child { font-size: 8px; }
+.model-controls > label:first-child select { font-size: 12px; }
+.canvas-heading strong, .library-title h3 { font-size: 12px; }
+.viewer-card header > span { font-size: 11px; }
+.viewer-card header small { font-size: 7px; }
+.viewer-empty strong { font-size: 11px; }
+.viewer-empty > span { font-size: 10px; }
+.prediction-captions, .studio-metrics span { font-size: 9px; }
+.studio-metrics small { font-size: 9px; }
+.tool, .text-button, .save-group label, .brush-size { font-size: 10px; }
+.editor-toolbar > p { font-size: 9px; }
+.studio-next { font-size: 9px; }
+.field-label { font-size: 10px; }
+.field-label input, .field-label select { font-size: 12px; }
+.adapt-form > p, .versions-panel > p { font-size: 12px; }
+.gate-note p, .job-card > p, .job-actions a, .job-actions button { font-size: 10px; }
+.version-row small, .version-note, .table-note { font-size: 11px; }
+.app-footer { font-size: 9px; color: #768e9b; }
+@media (max-width: 1250px) {
+  .hero-proof { font-size: 8px; }
+  .metric-strip p { font-size: 8px; }
+  .metric-strip small { font-size: 7px; }
+  .metric-strip strong { font-size: 28px; }
+  .hero-copy > p { font-size: 12px; }
+  .nav-item { font-size: 11px; }
+}
+@media (max-width: 680px) {
+  .eyebrow { font-size: 8px; letter-spacing: 1px; }
+  .hero h1 { font-size: 42px; }
+  .hero-proof { font-size: 8px; gap: 9px; }
+  .metric-strip strong { font-size: 27px; }
+  .metric-strip strong span { font-size: 18px; }
+  .metric-strip p { font-size: 8px; }
+  .topbar strong { font-size: 10px; }
+  .topbar .btn { font-size: 9px; }
+  .studio-metrics small, .studio-metrics span { font-size: 7px; }
+  .prediction-captions { font-size: 7px; }
+  .canvas-heading strong { max-width: 100%; }
+  .editor-toolbar .save-group .btn { font-size: 10px; }
+  .small-note { font-size: 10px; }
+}

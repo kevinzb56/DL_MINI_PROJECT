@@ -1,0 +1,73 @@
+{
+  "archive": "phase5_results.zip",
+  "sha256": "849b8a1c80a406923d4f2cb49b24dd695745bc1cedc18f211e286e3507b8a67a",
+  "status": "verified",
+  "adaptation_runs": 30,
+  "checkpoint_hashes_verified": 30,
+  "metric_files_verified": 96,
+  "recorded_tests_passed": 5,
+  "summary": [
+    {
+      "model": "control",
+      "k": 0,
+      "target_dice_percent_mean": 34.01163463113143,
+      "target_dice_percent_sample_sd": null,
+      "source_dice_change_points_mean": 0
+    },
+    {
+      "model": "control",
+      "k": 1,
+      "target_dice_percent_mean": 41.46100568741952,
+      "target_dice_percent_sample_sd": 8.93103767591564,
+      "source_dice_change_points_mean": -5.052293487804849
+    },
+    {
+      "model": "control",
+      "k": 5,
+      "target_dice_percent_mean": 54.85263067719183,
+      "target_dice_percent_sample_sd": 1.0679917393387854,
+      "source_dice_change_points_mean": -2.3340578295510506
+    },
+    {
+      "model": "control",
+      "k": 10,
+      "target_dice_percent_mean": 56.9147904279985,
+      "target_dice_percent_sample_sd": 1.3349811143435082,
+      "source_dice_change_points_mean": -5.348892003172054
+    },
+    {
+      "model": "boundary",
+      "k": 0,
+      "target_dice_percent_mean": 41.71907729420223,
+      "target_dice_percent_sample_sd": null,
+      "source_dice_change_points_mean": 0
+    },
+    {
+      "model": "boundary",
+      "k": 1,
+      "target_dice_percent_mean": 47.99805132476123,
+      "target_dice_percent_sample_sd": 6.899109206727022,
+      "source_dice_change_points_mean": -3.83620279939366
+    },
+    {
+      "model": "boundary",
+      "k": 5,
+      "target_dice_percent_mean": 57.226916352630056,
+      "target_dice_percent_sample_sd": 1.9970094239395462,
+      "source_dice_change_points_mean": -2.810124463798629
+    },
+    {
+      "model": "boundary",
+      "k": 10,
+      "target_dice_percent_mean": 59.09482597049914,
+      "target_dice_percent_sample_sd": 1.7606710873772564,
+      "source_dice_change_points_mean": -4.873988221592039
+    }
+  ],
+  "limits": [
+    "No fresh GPU inference performed locally.",
+    "Encoder equality is reported by the run and covered by recorded recovery tests; tensors were not loaded by this audit.",
+    "Five support draws share the same query set; spread is not a population confidence interval.",
+    "Existing public masks were used; human correction time was not measured."
+  ]
+}

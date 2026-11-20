@@ -1,0 +1,26 @@
+{
+  "protocol": "followup_retention_v1",
+  "manifest_sha256": "9c97554166af5494c746d46885425f748ea46c4035863c22c90215b3506358ae",
+  "device": "cuda", "threads": 2,
+  "training_seeds": [42, 73, 101],
+  "source_models": ["litecrack", "litecrack_ba", "stabilized_r2au"],
+  "draws": [0, 1, 2, 3, 4], "budgets": [1, 5, 10],
+  "screen_draw": 0, "screen_k": 5,
+  "adaptation": {"epochs": 5, "batch_size": 2, "gradient_clip_norm": 1.0},
+  "conditions": [
+    {"name": "no_replay", "learning_rate": 0.0001, "source_per_support": 0, "distill_weight": 0.0},
+    {"name": "replay", "learning_rate": 0.0001, "source_per_support": 1, "distill_weight": 0.0},
+    {"name": "distill_1", "learning_rate": 0.0001, "source_per_support": 1, "distill_weight": 1.0},
+    {"name": "distill_5", "learning_rate": 0.0001, "source_per_support": 1, "distill_weight": 5.0},
+    {"name": "distill_slow", "learning_rate": 0.00003, "source_per_support": 1, "distill_weight": 5.0},
+    {"name": "distill_more_replay", "learning_rate": 0.00003, "source_per_support": 3, "distill_weight": 5.0}
+  ],
+  "gates": {"max_source_drop_points": 2.0, "min_target_gain_points": 0.0},
+  "broad_scene_gates": {"min_relative_nonroad_fp_reduction": 0.25, "max_recall_drop_points": 2.0, "max_dice_drop_points": 2.0},
+  "scene_requirements": {
+    "scene_train": {"images": 24, "sites": 3},
+    "scene_validation": {"images": 12, "sites": 2},
+    "scene_test": {"images": 30, "sites": 5}
+  },
+  "scope": "Old query remains exploratory; new physically independent test scenes are required for confirmation. Distillation uses source-training images only."
+}
